@@ -12,6 +12,7 @@
 \usepackage{tikz}
 \usepackage{algorithm, algpseudocode}
 \usetikzlibrary{positioning}
+\usepackage{suffix}
 % \usepackage{mathptmx}
 \hypersetup{
     colorlinks=true,
@@ -128,11 +129,11 @@
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\one}{\mathbf{1}} % indicator random variable
 \DeclareMathOperator{\prox}{prox}
-\DeclareMathOperator{\nnz}{nnz}
-\DeclareMathOperator{\Ker}{Ker}
-\DeclareMathOperator{\Range}{Range}
+\DeclareMathOperator{\range}{range}
 \DeclareMathOperator{\curl}{curl}
 \DeclareMathOperator{\VS}{VS}
+\DeclareMathOperator{\nnz}{nnz}
+\DeclareMathOperator{\tw}{tw}
 
 % number systems
 \newcommand{\R}{\mathbb{R}}
@@ -356,4 +357,10 @@
 \newcommand{\myfig}[4]{\begin{figure}[H] \centering \includegraphics[width=#1\textwidth]{#2} \caption{#3} \label{#4} \end{figure}}
 
 % item equation
-\newenvironment{itemequation}{\hfill$\begin{aligned}[t]}{\end{aligned}$\hfill\null}
+\newcommand\itemeq[1]{
+    \hfill $\displaystyle #1$ \hfill \refstepcounter{equation} \textup{(\theequation)}
+}
+\WithSuffix\newcommand\itemeq*[1]{
+    \hfill $\displaystyle #1$
+    \hfill \refstepcounter{equation}
+}
