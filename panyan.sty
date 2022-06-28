@@ -105,13 +105,6 @@
 \DeclareMathOperator*{\argmax}{\arg\max}
 \DeclareMathOperator*{\argmin}{\arg\min}
 
-\newcommand{\pr}[1]{\Pr\normalfont\lbrack #1 \rbrack} %probability
-\newcommand{\ex}[1]{\E\normalfont\lbrack #1 \rbrack}%expectation
-\newcommand{\bpr}[1]{\Pr\normalfont \left[#1 \right]} %probability
-\newcommand{\bex}[1]{\E\normalfont \left[#1 \right]}
-\newcommand{\ang}[1]{\langle #1 \rangle}
-\newcommand{\bang}[1]{\left\langle #1 \right\rangle}
-
 % math terms 
 \DeclareMathOperator{\poly}{poly}
 \DeclareMathOperator{\polylog}{polylog}
@@ -132,8 +125,10 @@
 \DeclareMathOperator{\range}{range}
 \DeclareMathOperator{\curl}{curl}
 \DeclareMathOperator{\VS}{VS}
-\DeclareMathOperator{\nnz}{nnz}
-\DeclareMathOperator{\tw}{tw}
+\DeclareMathOperator{\nnz}{nnz} % number of non-zero entries
+\DeclareMathOperator{\tw}{tw} % tree width
+\DeclareMathOperator{\ex}{ex} % extremal
+\DeclareMathOperator{\dom}{dom}
 
 % number systems
 \newcommand{\R}{\mathbb{R}}
@@ -161,6 +156,7 @@
 \newcommand{\MIP}{\mathsf{MIP}}
 \newcommand{\NEXP}{\mathsf{NEXP}}
 \newcommand{\BQP}{\mathsf{BQP}}
+\newcommand{\PCP}{\mathsf{PCP}}
 
 % short forms
 \newcommand{\eps}{\varepsilon}
@@ -177,6 +173,7 @@
 \newcommand{\zo}{\{0,1\}}
 \newcommand{\co}{:}                       %\newcommand{\co}{\colon}
 \newcommand{\bdry}{\partial}
+\newcommand{\pa}{\partial}
 \newcommand{\grad}{\nabla}
 \newcommand{\transp}{^\intercal}
 \newcommand{\inv}{^{-1}}
