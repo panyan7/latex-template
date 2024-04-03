@@ -95,6 +95,8 @@
 % probability type operators
 \let\Pr\relax
 \DeclareMathOperator*{\Pr}{\mathbf{Pr}}
+\let\P\relax
+\DeclareMathOperator*{\P}{\mathbb{P}}
 \DeclareMathOperator*{\E}{\mathbb{E}}
 \DeclareMathOperator*{\Var}{\mathbf{Var}}
 \DeclareMathOperator*{\Cov}{\mathbf{Cov}}
@@ -132,6 +134,10 @@
 \DeclareMathOperator{\im}{im}
 \DeclareMathOperator{\meas}{meas}
 \newcommand{\stirlingnum}{\genfrac{\{}{\}}{0pt}{}}
+\DeclareMathOperator{\ba}{ba}
+\newcommand{\Mf}{\mathfrak{M}}
+\DeclareMathOperator{\graph}{graph}
+\DeclareMathOperator{\co}{co}
 
 % number systems
 \newcommand{\R}{\mathbb{R}}
@@ -174,16 +180,21 @@
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\ot}{\otimes}
 \newcommand{\zo}{\{0,1\}}
-\newcommand{\co}{:}                       %\newcommand{\co}{\colon}
+% \newcommand{\co}{:}
 \newcommand{\bdry}{\partial}
 \newcommand{\pa}{\partial}
 \newcommand{\grad}{\nabla}
 \newcommand{\transp}{^\intercal}
 \newcommand{\inv}{^{-1}}
-\newcommand{\symmdiff}{\triangle} \newcommand{\symdiff}{\symmdiff}
+\newcommand{\symmdiff}{\triangle}
+\newcommand{\symdiff}{\symmdiff}
 \newcommand{\half}{\tfrac{1}{2}}
 \newcommand{\bbone}{\mathbbm 1}
 \newcommand{\Id}{\bbone}
+\newcommand{\weakto}{\rightharpoonup}
+\newcommand{\weakstarto}{\overset{*}\rightharpoonup}
+\newcommand{\unit}{\mathbf{1}}
+\newcommand{\convergesto}[1]{\xrightarrow[n\to\infty]{#1}}
 
 % mathcal
 \newcommand{\Ac}{\mathcal{A}}
@@ -364,4 +375,8 @@
     \hfill $\displaystyle #1$
     \hfill \refstepcounter{equation}
 }
+
+
+\newcommand{\problem}[1]{\clearpage\section*{Problem #1}}
+\WithSuffix\newcommand{\problem}*[1]{\section*{Problem #1}}
 
